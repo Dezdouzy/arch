@@ -1,32 +1,11 @@
-
-<!-- domaines-activites.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domaines d'activités - Notre Entreprise</title>
-    <style>
-
-        nav {
-            background-color: #f8f9fa;
-            padding: 1rem;
-            margin-bottom: 2rem;
-        }
-        nav a {
-            margin-right: 1rem;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            color: #007bff;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-    </style>
+    <title>Domaines d'activités - Atelier Haussmann Design</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -35,12 +14,89 @@
             <a href="qui-sommes-nous.html">Qui sommes-nous</a>
             <a href="domaines-activites.html">Domaines d'activités</a>
             <a href="histoire.html">Histoire</a>
-            <a href="contactez-nous.html">Contactez-nous</a>
+            <a href="contactez-nous.html">Contact</a>
         </div>
     </nav>
+
+    <div class="header-section">
+        <div class="container">
+            <h1>Nos Domaines d'Activités</h1>
+            <p>Découvrez nos références et projets réalisés</p>
+        </div>
+    </div>
+
     <div class="container">
-        <h1>Domaines d'activités</h1>
-        <p>Cette page est actuellement vide.</p>
+        <section class="projects-grid">
+            <div class="project-card">
+                <img src="images/projet1.jpg" alt="Appartement Haussmannien - Saint-Germain">
+                <div class="project-card-content">
+                    <h3>Appartement Haussmannien - Saint-Germain</h3>
+                    <p>Rénovation complète 180m²</p>
+                    <ul>
+                        <li>Restauration des moulures d'origine</li>
+                        <li>Création d'une cuisine moderne</li>
+                        <li>Rénovation des parquets chevron</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet2.jpg" alt="Loft - Le Marais">
+                <div class="project-card-content">
+                    <h3>Loft - Le Marais</h3>
+                    <p>Transformation d'atelier 150m²</p>
+                    <ul>
+                        <li>Création d'une mezzanine</li>
+                        <li>Design d'escalier sur mesure</li>
+                        <li>Aménagement d'un espace bureau</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet3.jpg" alt="Duplex - Trocadéro">
+                <div class="project-card-content">
+                    <h3>Duplex - Trocadéro</h3>
+                    <p>Réaménagement 200m²</p>
+                    <ul>
+                        <li>Création d'un escalier monumental</li>
+                        <li>Optimisation des espaces de vie</li>
+                        <li>Installation domotique complète</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/projet4.jpg" alt="Bureaux - Opéra">
+                <div class="project-card-content">
+                    <h3>Bureaux - Opéra</h3>
+                    <p>Aménagement professionnel 300m²</p>
+                    <ul>
+                        <li>Espaces de travail collaboratifs</li>
+                        <li>Salles de réunion modulables</li>
+                        <li>Conservation des éléments historiques</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties-section">
+            <h2>Nos Interventions</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>Rénovation Complète</h3>
+                    <p>Prise en charge totale de votre projet, de la conception à la réalisation finale.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Aménagement Sur Mesure</h3>
+                    <p>Création de mobilier et d'agencements personnalisés selon vos besoins.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Décoration d'Intérieur</h3>
+                    <p>Sélection des matériaux, couleurs et mobilier pour un intérieur unique.</p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
