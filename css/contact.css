@@ -1,0 +1,38 @@
+/* contact.css */
+.contact-page {
+    margin-top: 6rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-right {
+    flex: 1;
+    padding-left: 2rem;
+    border-left: 1px solid #eee;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-right {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding-top: 2rem;
+    }
+}

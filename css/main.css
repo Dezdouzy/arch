@@ -4,7 +4,7 @@
 
 /* Variables de couleurs */
 :root {
-    --primary: #40b0bf;     /* Bleu turquoise pour les bordures */
+    --primary: #0d8353;     /* #40b0bf Bleu turquoise pour les bordures */
     --primary-light: #f4dfc1; /* Beige clair */
     --secondary: #f2ede4;     /* Beige plus clair pour alterner */
     --text-dark: #333333;     /* Texte foncé */
@@ -70,20 +70,56 @@ nav a:hover {
     padding: 0 2rem;
 }
 
-/* Header section avec parallax */
+/* In main.css */
 .header-section {
-    height: 100vh;
-    background-image: linear-gradient(#f4dfc1b3, #f4dfc1b3), 
-                      url('../images/header-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--text-dark);
-    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 80vh;  /* Augmentez à 80% ou 100vh pour pleine hauteur */
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);  /* Dark overlay */
+}
+
+
+
+.header-content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: left;
+    z-index: 1;
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.9),  /* Assombri l'ombre */
+        0 0 15px rgba(255, 255, 255, 0.7); /*Augmenté l'intensité de la lueur*/
+    letter-spacing: 1px;
+    font-weight: 700;
+ }
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.header-content p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .header-section h1 {
@@ -134,7 +170,7 @@ section h2 {
     border-radius: 5px;
     box-shadow: 0 5px 15px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    text-align: left;
     border-top: 3px solid var(--primary);
 }
 
